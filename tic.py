@@ -121,14 +121,6 @@ def check_for_columns(board):
 
 # def check_for_diagnols(board):
 
-display_board()
-# check_for_columns(board)
-check_for_rows(board)
-if run_column_fxn != False:
-    check_for_columns(board)
-    run_column_fxn = ''
-print(board)
-
 
 def main():
   valid_entries = [0,1,2]
@@ -173,10 +165,17 @@ def main():
         print()
 
 
+display_board()
+# check_for_columns(board)
+check_for_rows(board)
+if run_column_fxn != False:
+    check_for_columns(board)
+    run_column_fxn = ''
+print(board)
+
+
 
 # display_board()
-# n = int(input('enter num: '))
-# main(n)
 
 
 
@@ -184,44 +183,6 @@ def main():
 # print("Index_num:",index_num)
 # print("column list:",column_list)
 
-# print(board[0].count(comp))
-
-# one = board[0].count(1)
-# print(one)
-
-
-# for row in board:
-#     print(row)
-
-# print()
-# board[1][0] = "X"
-
-
-# for row in board:
-#     print(row)
-
-# def display_board():
-#     for row in board:
-#         for item in row:
-#             print(" | " + item + " | ", end=" ")
-#         print()
-
-# def handle_turn():
-#     position = input("Choose position from 1-9: ")
-#     position = int(position) - 1
-
-#     board[position] = "X"
-#     display_board()
-
-
-# def play_game():
-#     display_board()
-#     handle_turn()
-
-
-
-
-# play_game()
 
 
 
